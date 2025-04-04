@@ -1,0 +1,384 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #556bba;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+footer {
+    background-color: #556bba;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#logo1 {
+    height: 50px;
+    width: 75px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 1px;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.contact-button, .bestel-button {
+
+    width: 90px;
+    background-color: Aquamarine;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    border-color: rgb(255, 98, 0);
+    border-style: solid;
+    text-align: center;
+}
+
+.bar1 {
+    display: flex;
+    gap: 10px;
+}
+.cart-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-button img {
+    width: 30px;
+    height: 30px;
+}
+.timeline-container {
+    align-self: flex-end;
+    margin-right: 40px;
+}
+#timeline-button {
+    height: 60px;
+    width: 100px;
+    display: block;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.brand {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#overons {
+    align-self: flex-end;
+    margin-left: 10px;
+}
+
+.contact {
+    text-align: center;
+    flex-grow: 1; /* Zorgt ervoor dat de contactinformatie gecentreerd blijft */
+}
+
+#bike1 {
+    grid-column: 1;
+    grid-row: 1;
+    height: 50px;
+}
+
+#bike2 {
+    grid-column: 2;
+    grid-row: 1;
+    height: 50px;
+}
+
+#bike3 {
+    margin-top: 2px;
+    grid-column: 3;
+    grid-row: 1;
+    height: 50%;
+}
+
+#Pelikaan {
+    Height: 75%;
+    width: 75%;
+    grid-column: 1;
+    grid-row: 3;
+    align-self: center;
+    margin-left: 50px;
+}
+
+#Gazelle {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+}
+
+#Cortina {
+    grid-column: 3;
+    grid-row: 3;
+    align-self: center;
+}
+
+#Stella {
+    grid-column: 4;
+    grid-row: 3;
+    align-self: center;
+}
+#elec1{
+    color: darkblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+}
+#hardt1{
+    color: darkblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+}
+#fsmb1{
+    color: darkblue;    
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 120%;
+}
+.slider-container {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    grid-column: 4/6;
+    grid-row: 1;
+    justify-self: right;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.logo1{
+    height:50%;
+}
+.prev {
+     left: 10px; 
+    }
+.next {
+     right: 10px;
+     }
+     footer {
+        position: relative;
+        overflow: hidden; 
+        width: 100%;
+    }
+    
+    main {
+        position: relative; 
+        min-height: 100vh;
+        overflow: hidden; 
+    }
+    
+    .bikeA {
+        position: absolute;
+        bottom: 0; 
+        left: -200px; 
+        width: 100px; 
+        animation: moveLoop 8.5s linear infinite;
+    }
+   a {
+color: orange;
+    }
+    #C{
+        font-size: 15px;
+        grid-column: 3;
+        grid-row: 3;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: 7px;
+    }
+    @keyframes moveLoop {
+        from { left: -200px; }
+        to { left: 200vw; }
+    }
+    .slider-container2 {
+        position: relative;
+        width: 80%;
+        height: 70%;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        grid-column: 5;
+        grid-row: 3/4;
+        justify-self: right;
+
+    
+    }
+    
+    .slider-container2 .slider {
+        display: flex;
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slider-container2 .slide {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    
+    .slider-container2 .slide img {
+        display: block;
+        width: 100%;
+    }
+    
+    .slider-container2 .prev, .slider-container2 .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    
+    .slider-container2 .prev 
+    { left: 10px; }
+
+    .slider-container2 .next 
+    { right: 10px; }
+  
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .brand {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    footer {
+        padding: 10px 20px;
+    }
+    
+    #overons {
+        margin-top: 40px;
+    }
+    
+    
+    .prev {
+         left: 10px; 
+        }
+    .next {
+         right: 10px;
+         }
+         #leergeld1{
+            margin-top: 0px;
+            font-size: 50px;
+            grid-column: 2/4;
+            grid-row: 2;
+            text-align: center;
+            align-content: center;
+        }
+        #leergeld2{
+            margin-top: 100px;
+            font-size: 20px;
+            grid-column: 2/4;
+            grid-row: 2/4;
+            text-align: center;
+            align-content: center;
+        }
+        
+        #leergeld4{
+            margin-bottom: 40px;
+            font-size: 20px;
+            grid-column: 2/4;
+            grid-row: 4;
+            text-align: center;
+        }
+        #logo2 {
+            grid-column: 5;
+            grid-row: 2;
+            height: 75%;
+            width: 70%;
+        }
+        #table1{
+            height: 100%;
+            width: 150%;
+            grid-column: 5/6;
+            grid-row: 2/4;
+        }
+        .actie 
+        {
+            grid-row: 2/4;
+            grid-column: 5/7;
+            border: 1px solid rgb(49, 41, 129);
+            width: 100%;
+            height: 100%;
+            align-content: center;  
+            text-align: center;
+        }

@@ -1,0 +1,433 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #556bba;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+footer {
+    background-color: #556bba;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 1px;
+    margin-right: auto;
+    margin-top: auto;
+}
+.logo1{
+    height: 50%;
+}
+.contact-button, .bestel-button {
+
+    width: 90px;
+    background-color: aquamarine;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    border-color: rgb(255, 85, 37);
+    border-style: solid;
+    text-align: center;
+}
+
+.bar1 {
+    display: flex;
+    gap: 10px;
+}
+.cart-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-button img {
+    width: 30px;
+    height: 30px;
+}
+.timeline-container {
+    align-self: flex-end;
+    margin-right: 40px;
+}
+#timeline-button {
+    height: 60px;
+    width: 100px;
+    display: block;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+
+}
+    
+
+    .bikeA {
+        position: absolute;
+        left: -200px; 
+        width: 100px; 
+        animation: moveLoop 8.5s linear infinite;
+    }
+    #overons {
+        align-self: flex-end;
+    }    
+   a {
+    color: orange;
+    }
+    @keyframes moveLoop {
+        from { left: -200px; }
+        to { left: 200vw; }
+    }
+    #contact1{
+        font-size: 200%;
+     grid-column: 1/3;
+     grid-row: 1;
+     text-align: center;
+     }
+       #naam1{
+        grid-column: 1;
+        grid-row: 2;
+        text-align: right;
+        align-self: center;
+       }
+       #telefoon1{
+    margin-bottom: 10px;
+        grid-column: 1;
+        grid-row: 3;
+        text-align: right;
+        align-self: center;
+       }
+       #email1{
+   
+        grid-column: 1;
+        grid-row: 4;
+        text-align: right;
+        align-self: center;
+       }
+       #onderwerp1{
+
+        grid-column: 1;
+        grid-row: 5;
+        text-align: right;
+        align-self: center;
+       }
+       #vraag1{
+        grid-column: 1;
+        grid-row: 6;
+        text-align: right;
+        align-self: center;
+       }
+       #naam2{
+        font-size: 20px;
+        height: 30px;
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        border-radius: 10px;
+        background-color:lightgray;
+        align-self: center;
+       }
+       #telefoon2{
+        font-size: 20px;
+        height: 30px;
+        width: 100%;
+        grid-column: 2;
+        grid-row: 3;
+        border-radius: 10px;
+        align-self: center;
+        background-color: lightgray;
+       }
+       #email2{
+        font-size: 20px;
+        height: 30px;
+        width: 100%;
+        grid-column: 2;
+        grid-row: 4;
+        border-radius: 10px;
+        background-color: lightgray;
+        align-self: center;
+       }
+       #onderwerp2{
+        font-size: 20px;
+        height: 30px;
+        width: 100%;
+        grid-column: 2;
+        grid-row: 5;
+        border-radius: 10px;
+        align-self: center;
+        background-color: lightgray;
+       }
+       #vraag2{
+        font-size: 20px;
+        height: 30px;
+        width: 100%;
+        grid-column: 2;
+        grid-row: 6;
+        border-radius: 10px;
+        align-self: center;
+        background-color: lightgray;
+       }
+#verstuurbtn{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    grid-column: 2;
+    grid-row: 8;
+    text-align: center;
+    justify-self: center;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+ #C{
+        font-size: 15px;
+        grid-column: 4;
+        grid-row: 9;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: 7px;
+    }
+    .border1{
+        margin-top: 0px;
+        margin-left: -2px;
+        grid-row: 2/8;
+        grid-column: 2/4;
+        border: 1.5px solid rgb(49, 41, 129);
+        width: 100%;
+        height: 100%;
+        align-content: center;  
+        text-align: center;
+    }
+  
+    #naamfiets1{
+        grid-row: 5;
+        grid-column: 2;
+        text-align: center;
+        align-self: center;  
+    }
+    #naamfiets2{
+        grid-row: 5;
+        grid-column: 3;
+        text-align: left;
+        align-self: center;  
+    }
+    #prijs1{
+        grid-row: 5/7;
+        grid-column: 2;
+        text-align: center;
+        align-self: center;  
+    }
+    #prijs2{
+        grid-row: 5/7;
+        grid-column: 3;
+        text-align: left;
+        align-self: center;  
+    }
+    #aantaldagen1{
+        grid-row: 6;
+        grid-column: 2;
+        text-align: center;
+        align-self: center;  
+    }
+    #aantaldagen2{
+        grid-row: 6;
+        grid-column: 3;
+        text-align: left;
+        align-self: center;  
+    }
+    #bestelimg{
+        margin-top: 5px;
+        height: 75%;
+        width: 99%;
+        grid-column: 2/4;
+        grid-row: 2/5;
+        align-self: center; 
+        justify-content: center;
+    }
+    #huurbtn1 {
+        height: 20px;
+        width: 50%;
+        grid-column: 2/4;
+        grid-row: 7;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        background-color: darkgrey;
+        border: 3px solid aquamarine;
+        border-radius: 5px;
+    }
+    #fietsselect1 {
+        border: 1.5px solid rgb(49, 41, 129); 
+        height: 100%;
+        width: 75%;
+    }
+    #fietsform {
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center;  /* Centers vertically */
+        grid-column: 5/7;
+        grid-row: 2/8;
+        height: 100%;
+        text-align: center;
+    }
+    #select1{
+        text-align: center;
+    }
+    
+    #selectbtn1{
+        height: 30px;
+        width: 100px;
+        color: black;
+        border: 2px solid rgb(49, 41, 129);
+        background-color: orange;
+        border-radius: 4px;
+    }
+    #select2{
+        text-align: center;
+
+    }
+    #selectbtn2{
+        height: 30px;
+        color: black;
+        border: 2px solid rgb(49, 41, 129);
+        background-color: orange;
+        border-radius: 4px;
+    }
+    #select3{
+        text-align: center;
+    }
+    #selectbtn3{
+        height: 30px;
+        width: 100px;
+        color: black;
+        border: 2px solid rgb(49, 41, 129);
+        background-color: orange;
+        border-radius: 4px;
+    }
+    #select4{
+        text-align: center;
+    }
+    #selectbtn4{
+        height: 30px;
+        width: 100px;
+        color: black;
+        border: 2px solid rgb(49, 41, 129);
+        background-color: orange;
+        border-radius: 4px;
+    }
+    #select5{
+        text-align: center;
+    }
+    #selectbtn5{
+        height: 30px;
+        width: 100px;
+        color: black;
+        border: 2px solid rgb(49, 41, 129);
+        background-color: orange;
+        border-radius: 4px;
+    }
+    #select6{
+        text-align: center;
+    }
+    #selectbtn6{
+        height: 30px;
+        width: 100px;
+        color: black;
+        border: 2px solid rgb(49, 41, 129);
+        background-color: orange;
+        border-radius: 4px;
+    }
+    #select7{
+        text-align: center;
+    }
+    #selectbtn7{
+        height: 30px;
+        width: 100px;
+        color: black;
+        border: 2px solid rgb(49, 41, 129);
+        background-color: orange;
+        border-radius: 4px;
+    }
+    #select8{
+        text-align: center;
+    }
+    #selectbtn8{
+        height: 30px;
+        width: 100px;
+        color: black;
+        border: 2px solid rgb(49, 41, 129);
+        background-color: orange;
+        border-radius: 4px;
+    }
+    #select9{
+        text-align: center;
+    }
+    #selectbtn9{
+        height: 30px;
+        width: 100px;
+        color: black;
+        border: 2px solid rgb(49, 41, 129);
+        background-color: orange;
+        border-radius: 4px;
+    }
+    #select10{
+        text-align: center;
+    }
+    #selectbtn10{
+        height: 30px;
+        width: 100px;
+        color: black;
+        border: 2px solid rgb(49, 41, 129);
+        background-color: orange;
+        border-radius: 4px;
+    }
+    #select11{
+        text-align: center;
+    }
+    #selectbtn11{
+        height: 30px;
+        width: 100px;
+        color: black;
+        border: 2px solid rgb(49, 41, 129);
+        background-color: orange;
+        border-radius: 4px;
+    }
+    #select12{
+        text-align: center;
+    }
+    #selectbtn12{
+        height: 30px;
+        width: 100px;
+        color: black;
+        border: 2px solid rgb(49, 41, 129);
+        background-color: orange;
+        border-radius: 4px;
+    }
+  
+/* I___I                              \  
+   |" "|                               |/
+    \-/    i____       _       _      _\|
+    | |    /                           /|
+ /--- ---/                             |\
+/   | |                               /
+    | |
+    - -
+*/

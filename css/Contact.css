@@ -1,0 +1,322 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #556bba;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+footer {
+    background-color: #556bba;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 1px;
+    margin-right: auto;
+    margin-top: auto;
+}
+.logo1{
+    height: 50%;
+}
+.contact-button, .bestel-button {
+
+    width: 90px;
+    background-color: aquamarine;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    border-color: rgb(255, 85, 37);
+    border-style: solid;
+    text-align: center;
+}
+
+.bar1 {
+    display: flex;
+    gap: 10px;
+}
+.cart-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-button img {
+    width: 30px;
+    height: 30px;
+}
+.timeline-container {
+    align-self: flex-end;
+    margin-right: 40px;
+}
+#timeline-button {
+    height: 60px;
+    width: 100px;
+    display: block;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr auto;
+    gap: 5px;
+}
+.contact {
+    text-align: center;
+    flex-grow: 1; /* Zorgt ervoor dat de contactinformatie gecentreerd blijft */
+}
+    
+    .bikeA {
+        position: absolute;
+    
+        left: -200px; 
+        width: 100px; 
+        animation: moveLoop 8.5s linear infinite;
+    }
+    #overons {
+        align-self: flex-end;
+    }    
+   a {
+    color: orange;
+    }
+    #C{
+        font-size: 15px;
+        grid-column: 3;
+        grid-row: 9;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: 7px;
+    }
+    @keyframes moveLoop {
+        from { left: -200px; }
+        to { left: 200vw; }
+    }
+    #image1{
+        height: 75%;
+        width: 100%;
+        grid-column: 1/6;
+        grid-row: 1/3;
+    }
+
+    #Contactons{
+        grid-column: 2/5;
+        grid-row: 3;
+        text-align: center;
+    }
+       #naam1{
+        margin-top: 7px;
+        grid-column: 1;
+        grid-row: 5;
+        text-align: right;
+       }
+       #telefoon1{
+    margin-bottom: 10px;
+        grid-column: 1;
+        grid-row: 5;
+        text-align: right;
+        align-self: end;
+       }
+       #email1{
+        margin-top: 25px;
+        grid-column: 1;
+        grid-row: 6;
+        text-align: right;
+        align-self: top;
+       }
+       #onderwerp1{
+        margin-top: 25px;
+        grid-column: 1;
+        grid-row: 8;
+        text-align: right;
+       }
+       #vraag1{
+        grid-column: 1;
+        grid-row: 8;
+        text-align: right;
+        align-self: center;
+       }
+       #klacht1{
+        grid-column: 4;
+        grid-row: 4;
+        text-align: center;
+       }
+       #naam2{
+        font-size: 20px;
+        height: 30px;
+        width: 100%;
+        grid-column: 2;
+        grid-row: 5;
+        border-radius: 10px;
+        background-color:lightgray;
+       }
+       #telefoon2{
+        font-size: 20px;
+        height: 30px;
+        width: 100%;
+        grid-column: 2;
+        grid-row: 5;
+        border-radius: 10px;
+        align-self: end;
+        background-color: lightgray;
+       }
+       #email2{
+        margin-top: 20px;
+        font-size: 20px;
+        height: 30px;
+        width: 100%;
+        grid-column: 2;
+        grid-row: 6/8;
+        border-radius: 10px;
+        background-color: lightgray;
+       }
+       #onderwerp2{
+        margin-top: 20px;
+        font-size: 20px;
+        height: 30px;
+        width: 100%;
+        grid-column: 2;
+        grid-row: 8;
+        border-radius: 10px;
+        align-self: start;
+        background-color: lightgray;
+       }
+       #vraag2{
+        font-size: 20px;
+        height: 30px;
+        width: 100%;
+        grid-column: 2;
+        grid-row: 8;
+        border-radius: 10px;
+        align-self: center;
+        background-color: lightgray;
+       }
+       #klacht2{
+        font-size: 20px;
+        height: 30px;
+        width: 100%;
+        grid-column: 4;
+        grid-row: 5/6;
+        border-radius: 10px;
+        background-color: lightgray;
+        
+       }
+       #klacht2{
+        width: 100%; 
+        height: 100%;
+    }
+#opening1{
+    font-size: 20px;
+    grid-column: 4;
+    grid-row: 7;
+    text-align: center;
+}
+#opening2{
+    margin-top: 70px;
+    font-size: 15px;
+    grid-column: 4;
+    grid-row: 7;
+    align-self: center;
+    text-align: center;
+}
+#address1{
+    font-size: 20px;
+    grid-column: 5;
+    grid-row: 7;
+    text-align: center;
+    align-self: center;
+}
+#address2{
+    font-size: 15px;
+    grid-column: 5;
+    grid-row: 7;
+    text-align: center;
+    align-self: end;
+}
+iframe{
+    grid-column: 5;
+    grid-row: 8;
+    place-self: center;
+}
+#contact1{
+    margin-top: 40px;
+    grid-column: 4;
+    grid-row: 8;
+    text-align: center;
+    align-self: start;
+}
+#telefooninfo1{
+    font-size: 15px;
+ 
+    grid-column: 4;
+    grid-row: 8;
+    text-align: left;
+    align-self: center;
+}
+#telefooninfo2{
+    margin-right: 60px;
+    font-size: 15px;
+    grid-column: 4;
+    grid-row: 8;
+    text-align: right;
+    align-self: center;
+
+}
+#emailinfo1{
+    grid-column: 4;
+    grid-row: 8;
+    text-align: left;
+    align-self: end;
+    margin-bottom: 50px
+}   
+#emailinfo2{
+    margin-right: 30px;
+    font-size: 15px;
+    grid-column: 4;
+    grid-row: 8;
+    text-align: center;
+    align-self: end;
+    margin-bottom: 50px
+}
+#verstuurbtn{
+  width: 50%;
+  height: 70%;
+    font-size: 15px;
+    grid-column: 4;
+    grid-row: 6;
+align-self: center;
+text-align: center;
+justify-self: center;
+border-radius: 5px;
+background-color: lightgrey;
+}
+.facebook{
+    grid-column: 4;
+    grid-row: 9;
+}
+/* I___I                              \
+   |" "|                               |/
+    \-/    i____       _       _      _\|
+    | |    /                           /|
+ /--- ---/                             |\
+/   | |                               /
+    | |
+    - -
+*/
