@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fietsenwinkel</title>
+    <link rel="stylesheet" href="css/index1.css">
+</head>
+<body>
+    <header>
+        <a href="html/index1.html">
+            <img class="logo1" src="image/fiets-standaard-footer.png" width="70" height="50">
+        </a>
+        <div class="header-buttons">
+            <a href="html/contact.html" class="contact-button">Contact</a>
+            <a href="html/huurdefault.html" class="bestel-button">Huur</a>
+        </div>
+        <div class="bar1">
+
+            <a href="html/winkelmandjedefault.html" onclick="openCart()">
+                <img class="cart-button" src="image/winkelwagen_fel_oranje.png" width="30" height="30">
+            </a>
+        </div>
+    </header>
+    <h2>Nieuwe vooraad binnenkort (alleen bij de fluitende fietser)</h2>
+    <main>
+        <div class="product" id="bike1">
+            <img src="image/cycle1.jpg">
+            <p id="elec1">elektrische mountainbike</p>
+        </div>
+        <div class="product" id="bike2">
+            <img src="image/cycle2.jpg">
+            <p id="hardt1">hardtail mountainbike</p>
+        </div>
+        <div class="product" id="bike3">
+            <img src="image/cycle4.jpg">
+            <p id="fsmb1">full-suspension mountain bike</p>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="image/Gazelle_CityGo_C7.jpg"></div>
+                <div class="slide"><img src="image/Gazelle_Orange_C7.jpg"></div>
+                <div class="slide"><img src="image/Pelikaan_Carry_On_Lady.jpg"></div>
+                <div class="slide"><img src="image/Stella_Allegra_voorwielmotor.jpg"></div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="slider-container2">
+            <div class="slider">
+                <div class="slide"><img src="image/korting1.jpg"></div>
+                <div class="slide"><img src="image/korting3.jpg"></div>
+                <div class="slide"><img src="image/korting6.png"></div>
+                <div class="slide"><img src="image/korting5.jpg"></div>
+            </div>
+            <button class="prev" onclick="moveSlide2(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide2(1)">&#10095;</button>
+        </div>
+        <img class="brand" id="Pelikaan" src="image/Pelikaan.jpg">
+        <img class="brand" id="Gazelle" src="image/Gazelle.png">
+        <img class="brand" id="Cortina" src="image/Cortina.png">
+        <img class="brand" id="Stella" src="image/Stella.png">
+     
+        <p id="C">© 2022 Fluitende Fietser</p>
+        <a id="buco1" href="html/ikkangeenfietsbetalen.html"> kan je geen fiets betalen? klik hier</a>
+    </main>
+    <footer>
+        <a id="overons" href="html/overons.html">Over Ons</a>
+        <div class="contact">
+            E-mail:<a  href="mailto:info@fluitendefietser.nl"> info@fluitendefietser.nl</a><br>
+            Social media:<a  href=" https://www.facebook.com/fietsmagazine" target="_blank"> Onze facebook</a><br>
+            <a href="Algemene-voorwaarden-BOVAG-tweewielerbedrijven-april-2018.pdf" target="_blank">Algemenevoorwaarden</a><br>
+        </div>
+        <div class="timeline-container">
+            <button id="timeline-button"></button>
+        </div>
+        <img class="bikeA" src="image/fietseranimation.png" width="100" height="75" onclick="bikeAnimn()">
+    </footer>
+    <script src="js/index1.js"></script>
+</body>
+</html>
